@@ -8,6 +8,9 @@ function Bot(avatarIds){
 
 }
 
+Bot.prototype.getDetails = function getDetails(){
+    return {"photoId":this._photoId,"userId":this._userId};
+}
 
 function getRandomPhotoId( selectedPhotoIds){
 
