@@ -1,8 +1,10 @@
+var Chance = require('chance').Chance();
 
+function Bot(avatarIds){
 
-function Bot(){
-
-
+    this._cards = [];
+    this._photoId = getRandomPhotoId(avatarIds);
+    this._userId = Chance.string({length:5}); 
 
 }
 
